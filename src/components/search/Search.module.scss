@@ -1,0 +1,35 @@
+.wrapper{
+    background-image: url('../../assets/images/footer-bg.jpg');
+    padding-top: 10rem;
+    position: relative;
+    padding-bottom: 14rem;
+
+    margin-bottom: 3rem;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-image: linear-gradient(to top, #0f0f0f, rgba(0, 0, 0, 0));
+    }
+    .form{
+        position: absolute;
+        width: 100%;
+        bottom: -2.5rem;
+        right: -3rem;
+        .value{
+            width: 30%;
+            border: 0;
+            background-color: #000;
+            padding: 0.5rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 30px;
+            color: #fff;
+            font-family: "Montserrat", sans-serif;
+        }
+
+    }
+}

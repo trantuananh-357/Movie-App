@@ -1,0 +1,86 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    align-items: center;
+    height: 128px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    transition: height 0.3s ease, background-color 0.3s ease;
+    z-index: 100;
+    .header-logo{
+        height: 100%;
+        align-items: center;
+        display: flex;
+        .logo{
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+        .title{
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+    
+        }
+
+    }
+
+
+
+    .header-menu{
+        .menu-item{
+            .menu-list{
+                display: flex;
+                .item{
+                    padding: 5px 0;
+                    font-weight: 700;
+                    position: relative;
+                    font-size: 2rem;
+                    list-style-type: none;
+                    border-bottom: 3px solid transparent;
+                    margin: 0 1rem;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        transition: width 0.5s ease;
+                        height: 3px;
+                        background-color: #ff0000;
+                    }
+
+                    &.active::after{
+                        width: 100%;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                    }
+                    a{
+                        color: #fff;
+                        &:hover{
+                            color: #ff0000;
+                        }
+                    }
+                    
+                }
+                .temp{
+                    margin: 0 32px;
+                }
+               
+                
+            }
+
+        }
+    }
+}
+
+
+.scroll-header{
+    height: 80px;
+    background-color: #000;
+}

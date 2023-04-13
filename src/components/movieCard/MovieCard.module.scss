@@ -1,0 +1,20 @@
+.wrapper {
+  margin: 5px 5px ;
+  .card {
+    .card-img {
+      width: 200px;
+      height: 300px;
+      border-radius: 30px;
+    }
+    .item{
+      width: 225px;
+      height: 360px;
+    }
+    
+    .movie-name {
+      color: #fff;
+      font-size: 1.17rem;
+      width: 200px;
+    }
+  }
+}

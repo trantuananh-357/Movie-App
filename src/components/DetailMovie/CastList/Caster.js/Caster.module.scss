@@ -1,0 +1,12 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    padding-right: 10px ;
+    .imgCaster{
+        width: 92px;
+        height: 160px;
+    }   
+    .nameCaster{
+
+    }
+}
